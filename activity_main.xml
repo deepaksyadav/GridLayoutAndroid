@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <ScrollView tools:context=".MainActivity" android:layout_margin="16dp" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <GridLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:columnCount="4">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/firstName" android:layout_gravity="end"/>
+
+        <EditText
+            android:id="@+id/firstNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:inputType="textPersonName"
+            tools:text="Being" />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/lastName" android:layout_gravity="end"/>
+
+        <EditText
+            android:id="@+id/lastNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:inputType="textPersonName"
+            tools:text="Human" />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/addressLine1" android:layout_gravity="end"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" tools:text="123 Some Street" android:layout_gravity="fill_horizontal" android:inputType="textPostalAddress" android:layout_columnSpan="3" android:id="@+id/addressLine1Field"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/addressLine2" android:layout_gravity="end"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" tools:text="Suite 123" android:layout_gravity="fill_horizontal" android:inputType="textPostalAddress" android:layout_columnSpan="3" android:id="@+id/addressLine2Field"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/city" android:layout_gravity="end"/>
+
+        <EditText
+            android:id="@+id/cityField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:inputType="textPostalAddress"
+            tools:text="Indore" />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/state" android:layout_gravity="end"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="80dp" tools:text="UT" android:inputType="text" android:id="@+id/state"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/zipCode" android:layout_gravity="end"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" tools:text="84096" android:layout_gravity="fill_horizontal" android:inputType="number" android:id="@+id/zip"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/emailAddress" android:layout_gravity="end"/>
+
+        <EditText
+            android:id="@+id/emailAddressField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:inputType="textEmailAddress"
+            tools:text="i@deepakyadav.org" />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/homePhone" android:layout_gravity="end"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" tools:text="(801) 123-4567" android:layout_gravity="fill_horizontal" android:inputType="phone" android:layout_columnSpan="3" android:id="@+id/homePhone"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/cellPhone" android:layout_gravity="end"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" tools:text="(801) 987-6543" android:layout_gravity="fill_horizontal" android:inputType="phone" android:layout_columnSpan="3" android:id="@+id/cellPhone"/>
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:layout_columnSpan="4" android:paddingTop="20dp" android:orientation="horizontal" android:gravity="center_horizontal">
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/clearButton" android:id="@+id/clearButton"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/submitButton" android:id="@+id/submitButton"/>
+
+</LinearLayout>
+
+</GridLayout>
+
+</ScrollView>
